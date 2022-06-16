@@ -11,40 +11,85 @@
     border: 1px ridge rgb(179, 173, 173);
 }
 .stack-head{
-    left:100px;
-    padding:10px;
+    padding:6px;
     vertical-align:middle;
-    margin-left: 120px;
+    margin: 0 18px 0 12px;
 }
 .stack-head:hover{
     background-color:rgb(247, 240, 240);
 }
 .stack-img{
-    width:140px;
+    width:147px;
 }
-.product{
+.about-product-forteam{
     color:grey;
-    left: 250px;
-    margin-top: 10px;
-    padding: 13px ;
+    margin-top: 18px;
     vertical-align:middle;
-    font-size: 13px;
+    font-size: 14px;
+}
+.about-product-forteam a{
+    text-decoration: none;
+    padding: 6px ;
+    margin-right: 12px;
+}
+.about-product-forteam a:hover{
+    text-decoration: none;
+    background-color: hsla(30, 9%, 96%, 0.932);
+    border-radius: 25%;
 }
 .search-area{
-    left:300px;
-    margin:15px 0;
-    padding-left: 20px;
-    width:65%;
+    margin:8px 0;
+    width:56%;
     vertical-align: middle;
-
 }
 .search-box{
     padding: 5px;
-    width: 80%;
+    width: 99%;
 }
 .search-area .search-icon{
     width:20px;
-    top:20px;
-    left:400px;
     position:absolute;
+    padding: 8px 5px;
+}
+.nav-button{
+    margin:5px 2px;
+    display: flex;
+}
+.nav-button button{
+    padding: 10px 16px;
+    margin:0 2px;
+    border-radius: 10%;
+    border:none;
+}
+.nav-button .login{
+    background-color: hsl(194, 38%, 89%);
+}
+.nav-button .signup{
+    background-color: rgb(142, 142, 230);
+}
+.body-container{
+    display:flex;
+}
+.v-nav-container{
+    width:15%;
+    margin:10px;
+    border: 1px solid black;
+}
+.nav-content{
+    margin:20px 15px;
+}
+.public{
+    color: gray;  
+}
+.sub-sections{
+    margin:12px 35px;
+}
+.grey-link a{
+    color:grey;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+.collectives{
+    margin-left: 10px;
 }
