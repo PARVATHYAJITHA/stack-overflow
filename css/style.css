@@ -2,16 +2,24 @@
     margin:0px;
     padding: 0px;
 }
-body{
-    overflow: hidden;
-}
 .main-container{
     width:100%;
 
 }
+body{
+    overflow:scroll;
+}
 .head-container{
     display:flex;
+    width: 99%;
     border: 1px ridge rgb(179, 173, 173);
+    position:sticky;
+    top:0;
+    left:0;
+    z-index:999;
+    background-attachment:local;
+    background-color: white;
+
 }
 .stack-head{
     padding:6px;
@@ -72,15 +80,18 @@ body{
 }
 .body-container{
     display:flex;
-    overflow: hidden;
+    position:relative;
+    z-index: -10;
+
 }
 .v-nav-container{
     width:16%;
-    height: 600px;
+    top:50px;
+    height: 530px;
+    position: fixed;
     border: 1px solid black;
     margin: 5px 0;
     padding-bottom: 20px;
-    overflow: scroll;
 }
 .v-nav-container:hover{
     overflow: scroll;
@@ -151,7 +162,11 @@ body{
     padding-bottom: 20px;
 }
 .detail-div{
-    width:100%;
+    position:relative;
+    width: 83%;
+    left:200px;
+    z-index:unset;
+ 
 }
 .author-profile{
     display:flex;
@@ -193,24 +208,217 @@ body{
 .activity:hover{
     background-color: rgb(252, 250, 250);
 }
-.stat-about{
+.stat-about ,.side{
     display:flex;
 }
 .stat ,.about{
-    margin:10px 25px 10px 25px;
+    margin:10px 25px 0 25px;
     
 }
 .stat span , .about span{
     font-size: 22px;
 }
 .stat-details{
-    margin:15px;
     padding:10px;
     display: flex;
 }
 .inline-condent{
-    padding-right: 45px;
+    padding-right: 50px;
 }
 .stat-container{
     border:1px solid black;
+    margin: 10px 30px 0 0;
+}
+.stat-container img{
+    width:30px;
+    margin:7px 5px 10px 7px;
+}
+.cloud{
+    font-size: 16px;
+    text-decoration: none;
+    color: black;
+    padding: 40px 0 0 10px;
+    margin-top: 20px;
+}
+.divcloud{
+    margin: 10px 0;
+}
+.cloud-details{
+    padding:10px;
+}
+.about-section1{
+    margin-top: 10px;
+}
+.about-section2{
+    width:55%;
+    font-size:18px;
+    word-spacing: 5px;
+    margin-bottom: 10px;
+}
+.about-sites{
+    margin:14px 0;
+    font-size: 20px;
+}
+.about-list{
+    padding-left: 14px;
+    line-height: 1.6;
+}
+.email-to{
+   padding-top: 10px;
+   font-size: 18px;
+}
+.communities-badges{
+    font-size: 20px;
+    display: flex;
+}
+.communities{
+    width: 30%;
+}
+.communities-details{
+    border: 1px solid black;
+    margin: 10px 30px;
+}
+.communities .view-all{
+    font-size: 12px;
+    padding-left: 50px;
+}
+.followers{
+    display:flex;
+    font-size: 16px;
+    margin:5px;
+}
+.followers .sites{
+    width:90%;
+}
+.site-img{
+    width:20px;
+}
+.right{
+    float: right;
+}
+.community-head{
+    font-size: 25px;
+    margin-left: 26px;
+}
+.badges{
+    border: 1px ridge grey;
+    margin: 10px 0 2px 0;
+    width: 90%;
+}
+.gold-star{
+    width: 50px;
+    margin:10px;
+}
+.gold-no{
+    font-size: 20px;
+    margin-top:10px;
+}
+.gold-badge{
+    font-size: 10px;
+}
+.badge-details{
+    display:flex;
+    margin: 5px 0;
+
+}
+.event{
+    vertical-align: top;
+    align-content: space-around;
+    padding-bottom: 4px;
+    border: none;
+}
+.gold-details{
+    width: 20px;
+}
+.silver-details{
+    width: 17px;
+}
+.coper-details{
+    width: 15px;
+}
+.event-button{
+    width:70%;
+
+}
+.date{
+    font-size: 12px;
+}
+.top-tags ,.top-post{
+    float:right;
+    width:70%;
+}
+.top-tag-head ,.top-post-head {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+.top-tag-details , .top-post-details{
+    display: flex;
+    border-bottom: 1px solid gray;
+    vertical-align: middle;
+    margin: 20px 0;
+    padding:5px;
+}
+.top-tag-outline , .top-post-outline{
+    border: 1px solid grey;
+    margin: 30px 0;
+}
+
+.section1 .blue-btn{
+    padding:2px 5px;
+    border: none;
+    background-color: rgb(158, 158, 252);
+}
+.yellow-dot{
+    width:10px;
+    margin-left: 10px;
+}
+.top-tags .view-all{
+    float: right;
+}
+.top-post-nav{
+    display: flex;
+}
+.top-post-links a{
+    text-decoration: none;
+}
+.nav-top-post{
+    float:right;
+    display: flex;
+    padding-left: 180px;
+}
+.nav-top-post div{
+    border:1px ridge grey;
+    vertical-align: baseline;
+    padding: 2px;
+}
+.space{
+    margin-right: 5px;
+}
+.all-score{
+    background-color: hsl(0, 2%, 70%);
+}
+.green-icon{
+    width:15px;
+}
+.section1 .green-btn{
+    background-color: green;
+    color: white;
+    padding: 3px;
+    border:none;
+}
+.top-tag-details .section1 {
+    width: 65%;
+}
+
+.top-tag-details .section1 a{
+    text-decoration: none;
+}
+.top-post-details .section1{
+    width:80%;
+}
+.svg-icong{
+    fill:green;
+}
+.top-post-details .section1 a{
+    text-decoration: none;
 }
