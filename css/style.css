@@ -11,37 +11,37 @@ body{
 }
 .head-container{
     display:flex;
-    width: 99%;
+    width: 100%;
     border: 1px ridge rgb(179, 173, 173);
     position:sticky;
-    top:0;
+    top: 0;
     left:0;
     z-index:999;
-    background-attachment:local;
     background-color: white;
 
 }
 .stack-head{
-    padding:6px;
+    padding-top:5px;
     vertical-align:middle;
-    margin: 0 18px 0 12px;
+    margin: 0 18px 0px 20px;
 }
 .stack-head:hover{
     background-color:rgb(247, 240, 240);
 }
 .stack-img{
-    width:147px;
+    width:152px;
 }
 .about-product-forteam{
-    color:grey;
     margin-top: 18px;
     vertical-align:middle;
-    font-size: 14px;
+    font-size: 15px;
 }
 .about-product-forteam a{
     text-decoration: none;
-    padding: 6px ;
+    padding: 6px 5px ;
     margin-right: 12px;
+    color:#6A737C;
+
 }
 .about-product-forteam a:hover{
     text-decoration: none;
@@ -49,7 +49,7 @@ body{
     border-radius: 25%;
 }
 .search-area{
-    margin:8px 0;
+    margin:10px 1px;
     width:56%;
     vertical-align: middle;
 }
@@ -67,7 +67,7 @@ body{
     display: flex;
 }
 .nav-button button{
-    padding: 10px 16px;
+    padding:0 15px;
     margin:0 2px;
     border-radius: 10%;
     border:none;
@@ -77,6 +77,7 @@ body{
 }
 .nav-button .signup{
     background-color: rgb(142, 142, 230);
+    color: white;
 }
 .body-container{
     display:flex;
@@ -85,13 +86,16 @@ body{
 
 }
 .v-nav-container{
+    background-color: white;
     width:16%;
     top:50px;
-    height: 530px;
+    height: 560px;
     position: fixed;
-    border: 1px solid black;
+    border: 1px ridge gray;
     margin: 5px 0;
     padding-bottom: 20px;
+    z-index: -1999;
+    overflow: scroll;
 }
 .v-nav-container:hover{
     overflow: scroll;
@@ -134,7 +138,7 @@ body{
 }
 .team-content{
     margin: 5px 0;
-    border: 1px solid blue;
+    border: 1px solid grey;
     padding: 5px 10px 0 20px;
 }
 .contents{
@@ -163,8 +167,8 @@ body{
 }
 .detail-div{
     position:relative;
-    width: 83%;
-    left:200px;
+    width: 80%;
+    left:240px;
     z-index:unset;
  
 }
@@ -176,7 +180,7 @@ body{
 }
 .profile-img img{
     width:130px;
-    border: 1px solid black;
+    border: 1px ridge rgb(224, 224, 224);
 }
 .profile-details{
     margin: 30px 15px;
@@ -226,7 +230,7 @@ body{
     padding-right: 50px;
 }
 .stat-container{
-    border:1px solid black;
+    border:1px ridge rgb(233, 229, 229);
     margin: 10px 30px 0 0;
 }
 .stat-container img{
@@ -275,7 +279,7 @@ body{
     width: 30%;
 }
 .communities-details{
-    border: 1px solid black;
+    border: 1px ridge rgb(192, 189, 189);
     margin: 10px 30px;
 }
 .communities .view-all{
@@ -285,7 +289,7 @@ body{
 .followers{
     display:flex;
     font-size: 16px;
-    margin:5px;
+    margin:1px;
 }
 .followers .sites{
     width:90%;
@@ -301,7 +305,7 @@ body{
     margin-left: 26px;
 }
 .badges{
-    border: 1px ridge grey;
+    border: 1px ridge rgb(211, 207, 207);
     margin: 10px 0 2px 0;
     width: 90%;
 }
@@ -343,22 +347,22 @@ body{
 .date{
     font-size: 12px;
 }
-.top-tags ,.top-post{
+.top-tags ,.top-post ,.top-meta{
     float:right;
     width:70%;
 }
-.top-tag-head ,.top-post-head {
+.top-tag-head ,.top-post-head ,.top-meta-head{
     font-size: 20px;
     margin-bottom: 30px;
 }
-.top-tag-details , .top-post-details{
+.top-tag-details , .top-post-details, .top-meta-details{
     display: flex;
     border-bottom: 1px solid gray;
     vertical-align: middle;
     margin: 20px 0;
     padding:5px;
 }
-.top-tag-outline , .top-post-outline{
+.top-tag-outline , .top-post-outline, .top-meta-outline{
     border: 1px solid grey;
     margin: 30px 0;
 }
@@ -410,15 +414,69 @@ body{
     width: 65%;
 }
 
-.top-tag-details .section1 a{
-    text-decoration: none;
-}
-.top-post-details .section1{
-    width:80%;
+.top-post-details .section1,.top-meta-details .section1{
+    width:90%;
 }
 .svg-icong{
     fill:green;
 }
-.top-post-details .section1 a{
+.top-post-details .section1 a , .top-meta-details .section1 a{
     text-decoration: none;
+    color: blue;
+}
+.q-a{
+    float:right;
+    display: flex;
+}
+.q-btn,.a-btn{
+    border: none;
+}
+.stack-black-meta{
+    width:20px;
+}
+.blue-chat{
+    width: 20px;
+}
+.footer{
+    width:95%;
+    background-color:#6A737C;
+    color:rgb(255, 255, 255);
+    display: flex;
+    z-index: 999;
+    bottom: 0;
+    padding:30px;
+}
+.footer-img{
+    width:20px;
+    margin-right: 20px;
+}
+.footer-header{
+    font-size: 16px;
+    width: max-content;
+    padding-right: 40px;
+}
+.footer-body{
+    padding-top:10px;
+    padding-right: 20px;
+    font-size: 14px;
+}
+.footer-extra{
+    margin-left: 200px;
+    word-spacing: 10px;
+    font-size: 10px;
+}
+.ower-details{
+    margin-top:180px;
+    margin-bottom: 30px;
+}
+.profile-btn{
+    float: right;
+    margin:10px;
+    padding-top: 10px;
+}
+.profile-btn button{
+    padding:6px;
+    background-color: white;
+    border:1px ridge grey;
+
 }
