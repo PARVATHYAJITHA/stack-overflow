@@ -1,13 +1,13 @@
 *{
     margin:0px;
     padding: 0px;
+    font-family: segoe ui;
 }
 .main-container{
     width:100%;
-
 }
 body{
-    overflow:scroll;
+    overflow-y:scroll;
 }
 .head-container{
     display:flex;
@@ -18,8 +18,6 @@ body{
     left:0;
     z-index:999;
     background-color: hsl(0, 9%, 98%);
-    
-
 }
 .stack-head{
     padding-top:5px;
@@ -30,12 +28,12 @@ body{
     background-color:rgba(247, 240, 240, 0.76);
 }
 .stack-img{
-    width:152px;
+    width:153px;
 }
 .about-product-forteam{
-    margin-top: 18px;
+    margin: 12px 2px;
     vertical-align:middle;
-    font-size: 15px;
+    font-size: 13px;
 }
 .about-product-forteam a{
     text-decoration: none;
@@ -50,8 +48,8 @@ body{
     border-radius: 25%;
 }
 .search-area{
-    margin:10px 1px;
-    width:57%;
+    margin:8px 1px 8px 3px;
+    width:56%;
     vertical-align: middle;
 }
 .search-box{
@@ -66,14 +64,15 @@ body{
     color: rgb(228, 222, 222);
 }
 .nav-button{
-    margin:4px 2px;
+    margin:2px 5px 0 2px;
     display: flex;
 }
 .nav-button button{
     padding:0 9px;
-    margin:5px 2px;
+    margin:6px 2px 10px 2px;
     border-radius: 10%;
-    border: 1px ridge #9cb0b8;
+    border: 1px solid #3bb1e0;
+    font-size: 14px;
 }
 .nav-button .login{
     background-color: hsl(194, 38%, 89%);
@@ -85,20 +84,37 @@ body{
 .body-container{
     display:flex;
     position:relative;
-
 }
 .v-nav-container{
     background-color: white;
-    width:15%;
+    width:14%;
     top:50px;
     height: 560px;
     position: sticky;
-    overflow-y: scroll;
-    margin: 10px 0;
+    overflow-y:scroll;
     padding: 7px 0;
 }
+/* width */
+.v-nav-container::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  .v-nav-container::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  .v-nav-container::-webkit-scrollbar-thumb {
+    background: rgb(196, 194, 194); 
+  }
+  
+  /* Handle on hover */
+  .v-nav-container::-webkit-scrollbar-thumb:hover {
+    background: rgb(138, 136, 136); 
+  }
 .nav-content{ 
-    margin: 10px 20px;
+    margin: 6px 18px;
     padding-top:10px;
 }
 .public{
@@ -107,16 +123,13 @@ body{
     font-size: 11px;
 }
 .sub-sections{
-    margin-left: 25px;
-    padding: 8px 10px;
+    margin-left: 15px;
+    padding: 8px 24px;
 }
 .grey-link a ,.grey{
     color:grey;
     text-decoration: none;
     font-size: 14px;
-}
-.grey-link a:hover{
-    background-color: black;
 }
 .collectives{
     margin: 15px 0 0 20px;
@@ -139,24 +152,26 @@ body{
     font-size: 12px;
 }
 .team-content{
-    margin: 10px 0;
-    border: 1px solid grey;
-    padding: 5px 10px 0 20px;
+    margin: 17px 0;
+    border: 1px ridge rgb(230, 220, 220);
+    padding: 15px 10px 0 10px;
 }
 .contents{
     font-size: 14px;
     color: black;
+    line-height: 1;
+    padding-top: 20px;
 }
 .sub-contents{
-    font-size: 14px;
+    font-size: 13px;
+    line-height: 1;
 }
 .team-img{
     margin-top: 10px;
     width:120px;
 }
 .create-team{
-    padding: 10px 20px;
-    margin:0 0 4px 0;
+    padding: 7px 21px;
     font-size: 10px;
     background-color: #e9780e;
     color: white;
@@ -169,10 +184,10 @@ body{
 }
 .users{
     border-right: 2px solid #ffae00;
-    background-color: rgba(229, 226, 226, 0.932);
+    background-color: rgba(231, 228, 228, 0.521);
     font-weight: bolder;
     color: black;
-    font-size: 16px;
+    font-size: 14px;
     text-decoration: none;
 }
 .users a{
@@ -180,72 +195,81 @@ body{
 }
 .detail-div{
     position:relative;
-    width: 85%;
- 
+    width: 83%;
 }
 .author-profile{
     display:flex;
 }
 .profile-img{
-    margin:18px 5px 5px 18px;
+    margin:21px 0 5px 21px;
 }
 .profile-img img{
     width:128px;
-    border: 1px ridge rgb(224, 224, 224);
+    border: 1px ridge rgb(243, 242, 242);
 }
 .profile-details{
-    margin: 30px 10px;
+    margin: 27px 13px;
+    word-spacing: 1;
+    font-size: 8px;
 }
 .name{
-    font-size: 37px;
-    font-weight: lighter;
+    font-size: 34px;
 }
 .join-details{
     margin-top: 10px;
+    font-size: small;
+    line-height: 1px;
+    padding-left: 2px;
 }
 .profile-activity{
-    margin: 5px 20px ;
+    margin: 4px 20px ;
 }
 .profile-activity button{
     border:none;
-    padding:8px 16px;
+    padding:5px 12px;
     border-radius: 20px;
 }
 .profile{
     color:aliceblue;
-    background-color: hsl(41, 100%, 50%);
+    background-color: hwb(19 4% 3% / 0.87);
 }
 .profile:hover{
-    background-color: azure;
+    background-color: #cf5221de;
 }
 .activity{
     background-color: white;
 }
 .activity:hover{
-    background-color: rgb(184, 167, 167);
+    background-color: rgb(231, 226, 226);
 }
 .stat-about ,.side{
     display:flex;
 }
-.stat ,.about{
-    margin:20px 0 0 12px;
-    
+.stat{
+    margin:15px 0 15px 20px;  
+}
+.about{
+    margin:16px 10px 0 0;
+
 }
 .stat span , .about span{
-    font-size: 22px;
+    font-size: 20px;
 }
 .stat-details{
-    padding:10px;
+    padding:3px;
     display: flex;
 }
-.inline-condent{
-    padding-right: 50px;
+.inline-condent1{
+    padding: 6px  50px 2px 8px;
+    width:100%;
 }
+
 .stat-container{
     border:1px ridge rgb(233, 229, 229);
-    margin: 10px 30px 0 0;
+    margin: 10px 20px 15px 0;
+    padding-right: 10px;
 }
-.stat-container img{
+.stat-details img{
     width:30px;
     margin:7px 5px 10px 7px;
 }
@@ -253,42 +277,43 @@ body{
     font-size: 16px;
     text-decoration: none;
     color: black;
-    padding: 40px 0 0 10px;
+    padding: 50px 0 0 3px;
     margin-top: 20px;
 }
-.divcloud{
-    margin: 10px 0;
+.google-img-cloud{
+    margin: 10px;
 }
-.cloud-details{
-    padding:10px;
+
+.collective{
+    padding: 4px 4px;
 }
 .about-section1{
     margin-top: 10px;
-    font-size: 17px;
-    font-weight: 100;
-    color: rgb(75, 73, 73);
+    font-size: 15px;
+    color: rgb(31, 29, 29);
 }
 .about-section2{
     width:55%;
-    font-size:17px;
-    word-spacing: 5px;
-    margin-bottom: 10px;
-    color:  rgb(75, 73, 73);
+    font-size:15px;
+    line-height: 1.5;
+    margin-bottom: 12px;
+    color: rgb(32, 31, 31);
 }
 .about-sites{
     margin:14px 0;
-    font-size: 20px;
+    font-size: 15px;
 }
 .about-list{
-    padding-left: 14px;
-    line-height: 1.6;
+    padding-left: 30px;
+    line-height: 2.5;
+    font-size: 14px;
 }
 .blue-link{
     color:blue;
 }
 .email-to{
    padding-top: 10px;
-   font-size: 18px;
+   font-size: 15px;
 }
 .communities-badges{
     margin-top: 20px;
@@ -390,18 +415,19 @@ body{
     display: flex;
     border-bottom: 1px solid rgb(209, 205, 205);
     vertical-align: middle;
-    margin: 20px 0;
-    padding:5px;
+    padding:15px;
 }
+
 .top-tag-outline , .top-post-outline, .top-meta-outline{
     border: 1px solid rgb(207, 206, 206);
     margin: 10px 0;
+    vertical-align: middle;
 }
 
 .section1 .blue-btn{
     padding:2px 5px;
     border: none;
-    background-color: rgb(158, 158, 252);
+    background-color: rgb(198, 198, 250);
 }
 .yellow-dot{
     width:10px;
@@ -415,41 +441,54 @@ body{
 }
 .top-post-links a{
     text-decoration: none;
+    font-size: 14px;
 }
 .nav-top-post{
     float:right;
     display: flex;
-    padding-left: 180px;
+    padding-left: 245px;
+    font-size: small;
 }
 .nav-top-post div{
-    border:1px ridge grey;
+    border:1px ridge rgb(202, 197, 197);
     vertical-align: baseline;
     padding: 2px;
+    color: rgb(151, 150, 150);
 }
 .space{
     margin-right: 5px;
 }
 .all-score{
-    background-color: hsl(0, 2%, 70%);
+    background-color: hsl(0, 4%, 90%);
 }
 .green-icon{
     width:15px;
 }
 .section1 .green-btn{
-    background-color: green;
+    background-color: #3cb371;
     color: white;
     padding: 3px;
     border:none;
 }
+.grey-icon{
+    fill:#a3a6a8;
+    width:17px;
+}
 .top-tag-details .section1 {
-    width: 65%;
+    width: 62%;
+    align-items: center;
+}
+.top-tag-details .section2 {
+    justify-content: right;
+    float: right;
 }
 
 .top-post-details .section1,.top-meta-details .section1{
-    width:90%;
+    width:87%;
+    vertical-align: middle;
 }
 .svg-icong{
-    fill:green;
+    fill:#3cb371;
 }
 .top-post-details .section1 a , .top-meta-details .section1 a{
     text-decoration: none;
@@ -458,9 +497,12 @@ body{
 .q-a{
     float:right;
     display: flex;
+    padding: 4px;
+    background-color: white;
 }
 .q-btn,.a-btn{
     border: none;
+    padding: 3px;
 }
 .stack-black-meta{
     width:20px;
@@ -470,8 +512,8 @@ body{
 }
 .footer{
     width:95%;
-    background-color:#353638;
-    color:rgb(229, 226, 226);
+    background-color:#222224;
+    color:rgb(202, 199, 199);
     display: flex;
     bottom: 0;
     padding:30px;
@@ -481,32 +523,50 @@ body{
     margin-right: 20px;
 }
 .footer-header{
-    font-size: 16px;
+    padding-top: 4px;
+    font-size: 13px;
     width: max-content;
-    padding-right: 80px;
+    padding-right: 95px;
+    font-weight: bold;
+}
+.footer-header a ,.footer-body a,.social a{
+    color:#818283;
+    text-decoration: none;
+}
+.footer-header a:hover ,.footer-body a:hover,.social a:hover{
+    color:#8a8b8d;
+    text-decoration: none;
 }
 .footer-body{
     padding-top:10px;
     padding-right: 20px;
     font-size: 14px;
+    font-weight: lighter;
+    color: #909294;
 }
 .footer-extra{
-    margin-left: 60px;
-    word-spacing: 10px;
     font-size: 10px;
+    color:#6A737C
+}
+.social{
+    margin-left:60px;
 }
 .ower-details{
-    margin-top:180px;
-    margin-bottom: 30px;
+    margin:220px 0 5px 45px;
 }
 .profile-btn{
     float: right;
-    padding: 10px 30px 0 0;
+    padding: 10px 10px 0 0;
 }
 .profile-btn button{
     padding:8px;
     background-color: white;
-    border:1px ridge rgb(156, 152, 152);
+    border:1px ridge rgb(207, 205, 205);
     color:#a0a1a3;
+    font-size: 13px;
+    border-radius: 5px;
 
+}
+.profile-btn button:hover{
+    background-color: #faf6f6;
 }
